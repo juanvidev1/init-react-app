@@ -1,0 +1,20 @@
+{
+  "name": "init-react-app",
+  "version": "1.0.0",
+  "description": "Package to init a new react app scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "init-react-app": "./scripts/create-react-app.sh"
+  },
+  "keywords": [
+    "react",
+    "app",
+    "frontend",
+    "scripts"
+  ],
+  "author": "juanvidev",
+  "license": "MIT"
+}
