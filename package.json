@@ -1,5 +1,5 @@
 {
-  "name": "init-react-app",
+  "name": "call-react-app",
   "version": "1.0.0",
   "description": "Package to init a new react app scaffold",
   "main": "index.js",
