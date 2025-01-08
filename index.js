@@ -12,7 +12,7 @@ console.log(`Creating React app with name: ${appName}`);
 const scriptPath = "./scripts/create-react-app.sh";
 console.log(`Executing script: ${scriptPath} ${appName}`);
 if (!appName) {
-  execSync(`bash ${scriptPath}`, { stdio: "inherit" });
+  execSync(`${scriptPath}`, { stdio: "inherit" });
 } else {
-  execSync(`bash ${scriptPath} ${appName}`, { stdio: "inherit" });
+  execSync(`${scriptPath} ${appName}`, { stdio: "inherit" });
 }
