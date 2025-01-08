@@ -27,7 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 
 echo "Welcome to create react app script"
 # read -e -p "Enter the path to create your app: " app_path
-if [[ $app_name == ""]]; then
+if [ -z "$app_name" ]; then
     read -e -p "Enter the name of your app: " app_name
 fi
 read -p "Select an option: 1 for JavaScript or 2 for TypeScript: " option
