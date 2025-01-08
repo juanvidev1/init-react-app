@@ -6,9 +6,10 @@ import path from "path";
 
 // Obtener los parámetros de la línea de comandos
 const appName = process.argv[2]; // El segundo argumento pasado al script
+console.log(`Creating React app with name: ${appName}`);
 
 // Llamar al script bash con el parámetro
-const scriptPath = path.resolve(__dirname, "./scripts/create-react-app.sh");
+const scriptPath = "./scripts/create-react-app.sh";
 console.log(`Executing script: ${scriptPath} ${appName}`);
 if (!appName) {
   execSync(`bash ${scriptPath}`, { stdio: "inherit" });
