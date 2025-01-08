@@ -1,0 +1,21 @@
+{
+  "name": "call-react-app",
+  "version": "1.1.6",
+  "description": "Package to init a new react app scaffold",
+  "main": "index.js",
+  "scripts": {
+    "call-react-app": "node index.js"
+  },
+  "bin": {
+    "init-react-app": "./scripts/create-react-app.sh"
+  },
+  "keywords": [
+    "react",
+    "app",
+    "frontend",
+    "scripts"
+  ],
+  "author": "juanvidev",
+  "license": "MIT",
+  "type": "module"
+}
