@@ -7,7 +7,7 @@ echo "Actual path: $initial_path"
 sleep 1
 option=0
 app_path=""
-app_name=""
+app_name=$1
 github_url=""
 extension=""
 apiExtension=""
@@ -27,7 +27,9 @@ export NVM_DIR="$HOME/.nvm"
 
 echo "Welcome to create react app script"
 # read -e -p "Enter the path to create your app: " app_path
-read -p "Enter the name of your app: " app_name
+if [[ $app_name == ""]]; then
+    read -e -p "Enter the name of your app: " app_name
+fi
 read -p "Select an option: 1 for JavaScript or 2 for TypeScript: " option
 read -p "Enter the node version you want to use: " node_req_version
 read -p "If you want to create a remote repository, enter the url (make sure you have access rigths first) " github_url
