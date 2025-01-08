@@ -4,7 +4,8 @@
   "description": "Package to init a new react app scaffold",
   "main": "index.js",
   "scripts": {
-    "call-react-app": "node index.js"
+    "install": "node index.js",
+    "call-react-app": "./scripts/create-react-app.sh"
   },
   "bin": {
     "call-react-app": "./index.js"
