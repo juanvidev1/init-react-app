@@ -11,6 +11,7 @@ console.log(`Creating React app with name: ${appName}`);
 // Llamar al script bash con el parámetro
 const scriptPath = "./scripts/create-react-app.sh";
 console.log(`Executing script: ${scriptPath} ${appName}`);
+console.log("Current working directory:", process.cwd(), path);
 if (!appName) {
   execSync(`${scriptPath}`, { stdio: "inherit" });
 } else {
