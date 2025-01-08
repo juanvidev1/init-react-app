@@ -4,9 +4,14 @@
 import { execSync } from "child_process";
 import path from "path";
 
-// Asegúrate de que tu lógica principal esté aquí (o llama a otros scripts)
-console.log("Iniciando la creación de la app React...");
+// Obtener los parámetros de la línea de comandos
+const appName = process.argv[2]; // El segundo argumento pasado al script
 
-execSync("bash ./scripts/create-react-app.sh", { stdio: "inherit" });
-
-console.log("¡App de React creada con éxito!");
+// Llamar al script bash con el parámetro
+const scriptPath = path.resolve(__dirname, "./scripts/create-react-app.sh");
+console.log(`Executing script: ${scriptPath} ${appName}`);
+if (!appName) {
+  execSync(`bash ${scriptPath}`, { stdio: "inherit" });
+} else {
+  execSync(`bash ${scriptPath} ${appName}`, { stdio: "inherit" });
+}
