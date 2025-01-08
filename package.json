@@ -1,11 +1,10 @@
 {
   "name": "call-react-app",
-  "version": "1.1.14",
+  "version": "1.1.13",
   "description": "Package to init a new react app scaffold",
   "main": "index.js",
   "scripts": {
-    "install": "node index.js",
-    "call-react-app": "./scripts/create-react-app.sh"
+    "call-react-app": "node index.js"
   },
   "bin": {
     "call-react-app": "./index.js"
