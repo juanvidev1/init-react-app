@@ -7,7 +7,7 @@
     "call-react-app": "node index.js"
   },
   "bin": {
-    "call-react-app": "./scripts/create-react-app.sh"
+    "call-react-app": "./index.js"
   },
   "keywords": [
     "react",
