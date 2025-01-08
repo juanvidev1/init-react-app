@@ -12,6 +12,7 @@ github_url=""
 extension=""
 apiExtension=""
 node_req_version=""
+echo "La app es $app_name"
 
 # Clones the scripts from repo
 git clone https://github.com/juanvidev1/create-react-app-script.git
