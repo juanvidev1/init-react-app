@@ -4,7 +4,6 @@
   "description": "Package to init a new react app scaffold",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "call-react-app": "node index.js"
   },
   "bin": {
